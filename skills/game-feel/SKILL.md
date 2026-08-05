@@ -14,14 +14,14 @@ will never write them unprompted because none of them are required for the game 
 
 ## The order (do not reorder)
 
-1. **Hit flash** — white tint, 60ms, on every damage event. → `skills/game-vfx`
-2. **Hitstop** — freeze 60-120ms on impact, silence audio. → `skills/game-vfx`
-3. **Pitch-randomised SFX** — never the same sound twice. → `skills/game-audio`
-4. **Screen shake** — trauma-based, squared, decaying.
-5. **Squash and stretch** — scale on land/jump/hit. Below.
-6. **Knockback** — everything hit moves, even slightly.
-7. **Anticipation** — a 60-120ms wind-up before any big action.
-8. **Particles** — last, and few.
+1. **Hit flash** ... white tint, 60ms, on every damage event. → `skills/game-vfx`
+2. **Hitstop** ... freeze 60-120ms on impact, silence audio. → `skills/game-vfx`
+3. **Pitch-randomised SFX** ... never the same sound twice. → `skills/game-audio`
+4. **Screen shake** ... trauma-based, squared, decaying.
+5. **Squash and stretch** ... scale on land/jump/hit. Below.
+6. **Knockback** ... everything hit moves, even slightly.
+7. **Anticipation** ... a 60-120ms wind-up before any big action.
+8. **Particles** ... last, and few.
 
 ⚠ **Numbers 1-3 are 80% of the result.** If you are out of budget, stop after three.
 
@@ -70,12 +70,12 @@ horizontal drift so a burst does not stack into an unreadable column.
 ## Camera
 
 - **Lead the movement.** Offset toward where the player is heading, ~15% of the screen.
-- **Lerp, never snap.** `cam += (target - cam) * (1 - Math.pow(0.001, dt))` — framerate-independent.
+- **Lerp, never snap.** `cam += (target - cam) * (1 - Math.pow(0.001, dt))` ... framerate-independent.
 - **Punch on impact:** briefly zoom in ~2% and back out. Almost invisible, enormously effective.
 
 ## Haptics (mobile)
 
-One short pulse on impact, via Capacitor. ⚠ **Sparingly** — constant vibration drains battery and gets
+One short pulse on impact, via Capacitor. ⚠ **Sparingly** ... constant vibration drains battery and gets
 turned off, taking your good hits with it. And ship a setting.
 
 ---

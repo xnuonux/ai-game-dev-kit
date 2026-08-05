@@ -23,7 +23,7 @@ parameters, tuned in minutes, perfectly consistent, with zero licence risk and z
 | **SFX, designed** | **jsfxr** (sfxr port, has a GUI) | ~5 KB | Unlicense |
 | **Playback of real files** | **Howler** | ~10 KB | MIT |
 | **Music / generative** | **Tone.js** | large, lazy-load it | MIT |
-| **Anything unusual** | Web Audio API directly | 0 | — |
+| **Anything unusual** | Web Audio API directly | 0 | ... |
 
 ### ZzFX is the default. Start here.
 
@@ -40,7 +40,7 @@ zzfx(...[2.1, , 149, 0.02, 0.02, 0.11, 4, 2.4, , , , , , 1.2, , 0.3, , 0.5, 0.02
 zzfx(...[2, 0.1, 250, 0.02, 0.1, 0.5, 4, 1.5, , , , , , 1.5, , 0.5, 0.1, 0.3, 0.1])
 ```
 
-**Design them in the browser at <https://killedbyapixel.github.io/ZzFX/>** — mash the randomise
+**Design them in the browser at <https://killedbyapixel.github.io/ZzFX/>** ... mash the randomise
 button until something is close, tweak, copy the array into your code. Ten minutes gets you a full
 game's SFX set that all sounds like one game, because one synth made it.
 
@@ -51,7 +51,7 @@ The 8-bit arcade vocabulary (`pickupCoin`, `laserShoot`, `explosion`, `powerUp`,
 
 ### Howler only for real audio files
 
-Music, voice, and recorded foley. **Use audio sprites** — one file containing every sound with an
+Music, voice, and recorded foley. **Use audio sprites** ... one file containing every sound with an
 offset map. One request instead of forty, which matters enormously on mobile.
 
 ---
@@ -135,9 +135,9 @@ one-starred, and it is the most common complaint in mobile game reviews.
 
 ## If you genuinely need recorded audio
 
-- **Kenney** (kenney.nl) — CC0, no attribution required, huge, and stylistically consistent.
-- **Sonniss GDC bundles** — royalty-free, professional, enormous.
-- **Freesound** — ⚠ **per-file licences vary wildly.** Check every single one. Some require
+- **Kenney** (kenney.nl) ... CC0, no attribution required, huge, and stylistically consistent.
+- **Sonniss GDC bundles** ... royalty-free, professional, enormous.
+- **Freesound** ... ⚠ **per-file licences vary wildly.** Check every single one. Some require
   attribution, some forbid commercial use. Never bulk-download and assume.
 
 Whatever you use, **generate an attribution file at build time** and ship it. See `skills/game-ship`.

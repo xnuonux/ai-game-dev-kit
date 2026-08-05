@@ -20,7 +20,7 @@ npm run build && npx cap sync && npx cap open android
 ```
 
 ⚠ **The package id (`com.yourstudio.mygame`) is permanent.** It cannot be changed after your first
-upload. Not the name, not the icon — the id. Decide it deliberately.
+upload. Not the name, not the icon ... the id. Decide it deliberately.
 
 ### Config that matters
 
@@ -46,14 +46,14 @@ keytool -genkey -v -keystore release.keystore -alias mygame \
 ```
 
 ⚠⚠ **Back this file up somewhere you will still have in five years. Losing the keystore means you can
-never update the app again — not "it's difficult", it is permanent.** Put it in a password manager,
+never update the app again ... not "it's difficult", it is permanent.** Put it in a password manager,
 not in the repo, and never in git.
 
 Build the bundle: `./gradlew bundleRelease` → `app/build/outputs/bundle/release/app-release.aab`
 
 ---
 
-## Attribution — generate it, do not write it
+## Attribution ... generate it, do not write it
 
 ```bash
 npx license-checker --production --json > licenses.json
@@ -67,12 +67,12 @@ a copyleft dependency during review is expensive. Failing at build time is free.
 
 ## The Play Console checklist
 
-- **Privacy policy URL** — required even if you collect nothing. Say that you collect nothing.
-- **Data safety form** — ⚠ answer it honestly. If you use an ad SDK you collect an advertising ID, and
+- **Privacy policy URL** ... required even if you collect nothing. Say that you collect nothing.
+- **Data safety form** ... ⚠ answer it honestly. If you use an ad SDK you collect an advertising ID, and
   saying otherwise is a policy violation.
-- **Content rating questionnaire** — see below.
-- **Target API level** — Google raises this annually and delists apps that fall behind.
-- **Store listing** — 2-8 screenshots, a feature graphic, a short and full description.
+- **Content rating questionnaire** ... see below.
+- **Target API level** ... Google raises this annually and delists apps that fall behind.
+- **Store listing** ... 2-8 screenshots, a feature graphic, a short and full description.
 
 ---
 
@@ -81,7 +81,7 @@ a copyleft dependency during review is expensive. Failing at build time is free.
 **Cute art plus blood is not a children's game, and the store decides that by looking at your
 listing, not your intent.**
 
-If your art reads as "for kids" — bright, rounded, cartoon characters — and your content has violence
+If your art reads as "for kids" ... bright, rounded, cartoon characters ... and your content has violence
 or gore, you are in the most dangerous category on the store. Google's Families policy is enforced by
 automated review and human appeal is slow.
 

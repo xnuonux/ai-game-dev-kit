@@ -20,7 +20,7 @@ broken, and no amount of quality in the good one fixes it.
 |---|---|---|
 | **Kenney** (kenney.nl) | **CC0** | The default. Enormous, consistent, no attribution required. A whole game can ship on Kenney alone and look intentional. |
 | **OpenGameArt** | ⚠ **varies per asset** | Check every single file. CC0, CC-BY and GPL sit side by side. |
-| **itch.io asset packs** | varies | Many are excellent and cheap. Read the licence — some forbid commercial use. |
+| **itch.io asset packs** | varies | Many are excellent and cheap. Read the licence ... some forbid commercial use. |
 | **Google Fonts** | OFL | Safe for UI. |
 
 🚨 **Never bulk-download and assume.** The most common licence failure in indie games is a CC-BY asset
@@ -31,10 +31,10 @@ shipped without attribution, or a GPL asset shipped at all.
 ## Palette first, art second
 
 **Choose a palette before you choose a sprite.** A fixed 16-32 colour palette applied across
-everything is the single cheapest way to make mismatched sources cohere — you can recolour any sprite
+everything is the single cheapest way to make mismatched sources cohere ... you can recolour any sprite
 into your palette and it instantly belongs.
 
-- **Lospec** (lospec.com/palette-list) — hundreds of curated palettes, free to use.
+- **Lospec** (lospec.com/palette-list) ... hundreds of curated palettes, free to use.
 - Pick one. Write the hex values into a constants file. **Never use a colour that is not in it.**
 
 ⚠ For the cute-brutal look: high-saturation pastels for everything, **one** deeply saturated red used
@@ -64,7 +64,7 @@ This is genuinely shippable as a style. Several successful games never left it.
 At 6 inches with 300 entities on screen, nobody sees detail. They see **shape and colour**.
 
 **The test:** render everything as solid black on white. ⚠ **If you cannot tell the player from an
-enemy from a pickup, no amount of detail will save it** — and this is the single most common
+enemy from a pickup, no amount of detail will save it** ... and this is the single most common
 readability failure in mobile action games.
 
 - Player: distinct silhouette, brightest value, often the only one with an outline.

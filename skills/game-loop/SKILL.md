@@ -71,7 +71,7 @@ const dpr = Math.min(devicePixelRatio || 1, coarse ? 1.5 : 2)
 
 **3. 30fps is a legitimate target on mobile.** A locked, stable 30 feels better than a 45 that
 oscillates, and it roughly halves thermal load. ⚠ Sustained full-rate rendering makes the phone hot,
-and a hot phone throttles — so a game that runs at 60 for four minutes and 24 forever after is
+and a hot phone throttles ... so a game that runs at 60 for four minutes and 24 forever after is
 *worse* than one that runs at 30 always.
 
 **4. `requestAnimationFrame` timing lies.** Never derive game time from frame count.
@@ -89,7 +89,7 @@ const drawX = prevX + (x - prevX) * alpha
 ```
 
 Store `prevX/prevY` at the top of each `simulate()`. Two lines, and it is the difference between
-smooth and stuttery on high-refresh phones — which is most phones now.
+smooth and stuttery on high-refresh phones ... which is most phones now.
 
 ---
 

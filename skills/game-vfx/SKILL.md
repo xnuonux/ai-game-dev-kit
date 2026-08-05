@@ -6,7 +6,7 @@ description: Use when a game needs particles, hit flashes, blood, screen effects
 # VFX
 
 **Rule zero: VFX is not decoration, it is feedback.** Every effect answers a question the player is
-asking — did that hit? did I take damage? is that thing dangerous? An effect that answers nothing is
+asking ... did that hit? did I take damage? is that thing dangerous? An effect that answers nothing is
 a frame-rate cost with a pretty face.
 
 If you only build one thing from this file, build the **hit flash**. It is six lines and it does more
@@ -19,11 +19,11 @@ than a particle system.
 | need | use | licence |
 |---|---|---|
 | Particles (PixiJS) | `@pixi/particle-emitter` | MIT |
-| Particles (Phaser/Excalibur) | **engine built-in** — do not add a library | — |
+| Particles (Phaser/Excalibur) | **engine built-in** ... do not add a library | ... |
 | Confetti / celebration | `canvas-confetti` | ISC |
 | Tweening | `@tweenjs/tween.js` | MIT |
-| Screen shake, hitstop, flash | **hand-rolled, ~40 lines** — see below | — |
-| Shaders | write GLSL by hand | — |
+| Screen shake, hitstop, flash | **hand-rolled, ~40 lines** ... see below | ... |
+| Shaders | write GLSL by hand | ... |
 | Post-processing (3D only) | `postprocessing` (pmndrs) | MIT |
 
 ⚠ **`lygia` is on the shelf and its licence is NOT plain MIT.** Read it before shipping a single line
@@ -36,7 +36,7 @@ competent emitters. Adding a second one is bundle weight and a second API to lea
 
 ## The four effects that matter, in order
 
-### 1. Hit flash — build this first
+### 1. Hit flash ... build this first
 
 The single highest-value visual effect in any action game. On damage, tint the sprite pure white for
 ~60ms. It reads at any size, on any background, at any frame rate.
@@ -49,7 +49,7 @@ function flash(sprite: { tint: number }, ms = 60) {
 }
 ```
 
-### 2. Hitstop — the illusion of weight
+### 2. Hitstop ... the illusion of weight
 
 Freeze the whole simulation for 60-120ms on a significant impact. Costs nothing, and it is why some
 games feel heavy and others feel like sliding stickers.
@@ -64,7 +64,7 @@ export const frozen = () => performance.now() < stopUntil
 ⚠ **Scale it.** A small hit gets 40ms, a boss kill gets 150ms. Constant hitstop reads as lag.
 ⚠ **Silence the audio during hitstop** (`skills/game-audio`).
 
-### 3. Screen shake — trauma-based, never additive
+### 3. Screen shake ... trauma-based, never additive
 
 Naive shake adds an offset per event and turns to nausea when ten things explode. Use a **trauma**
 value that decays, and square it so small events are subtle and big ones are violent.
@@ -86,7 +86,7 @@ export function shakeOffset(dt: number, maxPx = 24) {
 ⚠ Offer a **reduce-shake** accessibility setting. Some players get motion sick, and the review will
 say so.
 
-### 4. Particles — last, and sparingly
+### 4. Particles ... last, and sparingly
 
 ```ts
 emitter.emit({
@@ -111,10 +111,10 @@ detail on a 6-inch screen with 300 entities.
 
 **The three layers:**
 
-1. **The burst** — 8-16 particles, high initial speed, gravity, ~400ms. Reads as violence.
-2. **The decal** — a splat drawn to a **persistent render texture** that is never cleared. This is
+1. **The burst** ... 8-16 particles, high initial speed, gravity, ~400ms. Reads as violence.
+2. **The decal** ... a splat drawn to a **persistent render texture** that is never cleared. This is
    the whole trick: the floor accumulates, and a screenshot at minute ten tells the entire story.
-3. **The drip** — occasional slow particles from a decal edge. Cheap, and it makes the scene feel wet
+3. **The drip** ... occasional slow particles from a decal edge. Cheap, and it makes the scene feel wet
    rather than stamped.
 
 ```ts
@@ -129,17 +129,17 @@ function splat(x: number, y: number, size: number, tint: number) {
 it requires thinking about a render target instead of spawning more particles.
 
 ⚠ **Colour is the tone dial.** The exact same system reads as candy with pink and magenta, and as
-horror with dark red. Decide deliberately — it drives your store rating (`skills/game-ship`).
+horror with dark red. Decide deliberately ... it drives your store rating (`skills/game-ship`).
 
 ---
 
 ## Shaders worth writing by hand
 
-- **White flash** — usually achievable with tint; only write a shader if you need partial flash.
-- **Dissolve** — noise threshold against a rising cutoff. The best death effect for soft characters.
-- **Outline** — sample 4-8 neighbours, draw where alpha differs. Essential for readability when the
+- **White flash** ... usually achievable with tint; only write a shader if you need partial flash.
+- **Dissolve** ... noise threshold against a rising cutoff. The best death effect for soft characters.
+- **Outline** ... sample 4-8 neighbours, draw where alpha differs. Essential for readability when the
   screen is full.
-- **Chromatic aberration** — offset R and B by a few pixels on damage. ⚠ Two frames only. Any longer
+- **Chromatic aberration** ... offset R and B by a few pixels on damage. ⚠ Two frames only. Any longer
   and it reads as a broken display.
 
 ---

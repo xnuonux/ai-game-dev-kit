@@ -78,7 +78,7 @@ good*. That is what the rest of this kit is:
 | how to tween | which 200 lines make a prototype feel like a game (`game-feel`) |
 | how to handle input | thumb zones and the 44px floor (`game-touch`) |
 | how to configure scale | the mobile thermal budget (`game-perf`) |
-| — | the brief, the economy, the ship path, the verdict gate |
+| ... | the brief, the economy, the ship path, the verdict gate |
 
 **Two things nothing on disk covers, and this kit does:** game-feel/screenshake, and audio without
 audio files. Those two skills are the reason this repo exists.

@@ -5,7 +5,7 @@ description: Use when adding persistence. Schema versioning and migration from t
 
 # Saves
 
-**The save file has a version number from the very first commit.** Not when you need it — then. It is
+**The save file has a version number from the very first commit.** Not when you need it ... then. It is
 two lines on day one and it is unrecoverable on day ninety.
 
 The failure is specific and universal: you ship, players play for a week, you add a feature that
@@ -83,7 +83,7 @@ export function load(): Save {
 **Validate on load, always.** A corrupt save that throws loudly is better than one that half-loads and
 produces a player with `NaN` coins and an unexplainable bug report.
 
-**Write on a debounce, not every frame.** ~2s, plus immediately on `visibilitychange` — mobile kills
+**Write on a debounce, not every frame.** ~2s, plus immediately on `visibilitychange` ... mobile kills
 backgrounded apps without warning.
 
 ```ts
@@ -93,7 +93,7 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) saveN
 **Keep a backup of the last good save.** One extra key. It is the difference between a bad review and
 a recoverable support message.
 
-**localStorage under ~1MB; Dexie/IndexedDB above.** Do not put a large event log in localStorage —
+**localStorage under ~1MB; Dexie/IndexedDB above.** Do not put a large event log in localStorage  ... 
 it is synchronous and it will stutter your frame.
 
 **Never trust the save for anything that matters commercially.** It is on the player's device and it
@@ -105,7 +105,7 @@ is editable. Fine for progress. Not fine for premium currency you sold. See `ski
 
 - [ ] `version` present from commit one
 - [ ] A migration test per version, run in CI
-- [ ] Load never throws — corrupt input yields a fresh save
+- [ ] Load never throws ... corrupt input yields a fresh save
 - [ ] Save on `visibilitychange`
 - [ ] Backup key written before migration
 - [ ] ⚠ Verified: a v1 save from launch day loads correctly in the current build

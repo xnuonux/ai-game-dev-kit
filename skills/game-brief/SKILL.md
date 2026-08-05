@@ -8,7 +8,7 @@ description: Use before writing any game code. Produces the one-page brief that 
 **No code until this exists.** An agent that starts from "make a tower defence game" builds a demo:
 technically fine, no loop, no reason to play twice.
 
-The brief is short on purpose. One page. Fill every field — **"TBD" in any field means you do not yet
+The brief is short on purpose. One page. Fill every field ... **"TBD" in any field means you do not yet
 know what you are building**, and building it will be the expensive way to find out.
 
 ---
@@ -24,7 +24,7 @@ know what you are building**, and building it will be the expensive way to find 
 **model:**               premium $X / F2P / free
 
 ## the verb
-The one thing the player does, constantly. Not "manage resources" — "drag a tower onto the rim".
+The one thing the player does, constantly. Not "manage resources" ... "drag a tower onto the rim".
 If you cannot name a single physical verb, the game does not exist yet.
 
 ## the loop
@@ -77,5 +77,5 @@ At the end, the finished game gets held against this document, field by field. T
 point of writing it: **it turns "is it good?" from an opinion into a comparison.**
 
 If the built thing no longer matches the brief, one of them is wrong. Say which, out loud, and change
-it deliberately. ⚠ **Do not silently update the brief to match what you built** — that is how a
+it deliberately. ⚠ **Do not silently update the brief to match what you built** ... that is how a
 project loses the ability to fail, and a project that cannot fail cannot succeed either.

@@ -8,7 +8,7 @@ description: Use before claiming a game is finished. You produce evidence; a hum
 **You are not permitted to declare a game done.**
 
 You have never played it. You cannot feel boredom, frustration, or delight. You have read every line
-of the code, so nothing in it can surprise you — which means you are the single worst-positioned
+of the code, so nothing in it can surprise you ... which means you are the single worst-positioned
 entity to judge whether it is fun.
 
 **What you can do is make the human's judgement take one minute instead of one hour.**
@@ -20,7 +20,7 @@ entity to judge whether it is fun.
 > The agent brings the receipts. The human makes the call.
 
 Anything a machine can check deterministically is a **hard gate** and you must run it. Anything
-requiring taste stays with a person, always. ⚠ Do not blur that line by scoring the fun yourself — a
+requiring taste stays with a person, always. ⚠ Do not blur that line by scoring the fun yourself ... a
 machine-set reward trains confident wrongness.
 
 ---
@@ -28,7 +28,7 @@ machine-set reward trains confident wrongness.
 ## What you must produce
 
 ### 1. A 20-second gameplay clip
-Real play, no cuts, no speed-up. ⚠ **Not a montage** — a montage hides the pacing, which is the thing
+Real play, no cuts, no speed-up. ⚠ **Not a montage** ... a montage hides the pacing, which is the thing
 being judged.
 
 ### 2. The first-90-seconds trace
@@ -74,7 +74,7 @@ you think is wrong.
 - Is the art coherent?
 - Would you play it tomorrow?
 
-⚠ **Do not answer these.** Do not imply an answer. Do not write "the combat feels punchy" — you do not
+⚠ **Do not answer these.** Do not imply an answer. Do not write "the combat feels punchy" ... you do not
 know that, and saying it costs you credibility on the things you *do* know.
 
 ---
@@ -86,14 +86,14 @@ know that, and saying it costs you credibility on the things you *do* know.
 
 **Clip:** clip.gif (20s, unedited)
 **First 90 seconds:** trace.md
-**Performance:** perf.png — 30fps held, p99 41ms, no thermal drop over 10 min
+**Performance:** perf.png ... 30fps held, p99 41ms, no thermal drop over 10 min
 **Device:** Pixel 6a, Android 14
 
 ### Hard gates: 9/9 pass
 
 ### What I measured as falling short
-1. The dash has ~90ms of input latency — over the 50ms budget. Cause: it waits for pointerup.
-2. Wave 12 difficulty spikes hard — 3.1x the enemy HP of wave 11 where every other step is ~1.4x.
+1. The dash has ~90ms of input latency ... over the 50ms budget. Cause: it waits for pointerup.
+2. Wave 12 difficulty spikes hard ... 3.1x the enemy HP of wave 11 where every other step is ~1.4x.
 3. The pickup sound is not pitch-randomised. Twenty in a row is machine-gun.
 
 ### Against the brief
@@ -111,5 +111,5 @@ Whether it is fun. Whether the difficulty curve feels right. Whether the art coh
 An agent that says "done, it's great" is worth nothing, because it says that every time.
 
 **An agent that says "here is the clip, here is the graph, and here are three things I measured as
-wrong" is worth a great deal** — and it earns the right to be believed about the things it *does*
+wrong" is worth a great deal** ... and it earns the right to be believed about the things it *does*
 report.

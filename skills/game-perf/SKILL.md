@@ -23,7 +23,7 @@ mode on. A three-year-old £200 phone is the honest target.
 | your actual budget | ~⅔ of the above | the browser and OS take the rest |
 
 **A locked 30 beats an oscillating 45.** And sustained 60 on mobile makes the device hot, and a hot
-device throttles — so a game that runs at 60 for four minutes and 24 forever after is *worse* than
+device throttles ... so a game that runs at 60 for four minutes and 24 forever after is *worse* than
 one that runs at 30 always. See `skills/game-loop`.
 
 ---
@@ -33,7 +33,7 @@ one that runs at 30 always. See `skills/game-loop`.
 ### 1. Allocation → garbage collection
 
 ⚠ **This is the number one cause of stutter in JS games and it does not show up as a low average
-frame rate** — it shows as a 40ms spike at the worst possible moment.
+frame rate** ... it shows as a 40ms spike at the worst possible moment.
 
 ```ts
 // BAD: allocates every frame, for every entity
@@ -49,13 +49,13 @@ numbers, vectors.
 
 ### 2. Draw calls
 
-Every texture switch is a draw call. **Batch by texture** — one atlas per layer (`free-tex-packer`).
+Every texture switch is a draw call. **Batch by texture** ... one atlas per layer (`free-tex-packer`).
 Going from 400 draw calls to 12 is routinely a 3x frame-rate win and costs one build step.
 
 ### 3. Overdraw
 
 Mobile GPUs are fill-rate bound. Full-screen transparent layers stacked on each other will kill you
-faster than any amount of game logic. ⚠ **Additive blending is expensive** — use it for light, not for
+faster than any amount of game logic. ⚠ **Additive blending is expensive** ... use it for light, not for
 everything.
 
 ---

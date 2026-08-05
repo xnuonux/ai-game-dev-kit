@@ -1,6 +1,6 @@
 ---
 name: game-economy
-description: Use when a game has currency, a store, or IAP. How to build a real economy that converts, without the dark patterns — and the specific reasons the honest version performs better.
+description: Use when a game has currency, a store, or IAP. How to build a real economy that converts, without the dark patterns ... and the specific reasons the honest version performs better.
 ---
 
 # Economy
@@ -13,10 +13,10 @@ strong enough on its own.
 
 ## Pick a model and declare it
 
-**Premium** — one payment, everything included. No currency purchases at all. An in-game store may
+**Premium** ... one payment, everything included. No currency purchases at all. An in-game store may
 exist and run on earned currency only. Cleanest product, hardest mobile discovery.
 
-**F2P** — soft + hard currency, ads, a pass. Real revenue, real obligations.
+**F2P** ... soft + hard currency, ads, a pass. Real revenue, real obligations.
 
 ⚠ **Never mix them.** A premium game with a hard-currency shop is the worst of both, and players spot
 it instantly and review it accordingly.
@@ -25,13 +25,13 @@ it instantly and review it accordingly.
 
 ## The two currencies
 
-**Soft** (coins/scrap/goo) — earned only, spent constantly, generously granted. Its job is to make the
+**Soft** (coins/scrap/goo) ... earned only, spent constantly, generously granted. Its job is to make the
 core loop feel rewarding.
 
-**Hard** (gems/thread/glint) — earned slowly OR bought. Its job is to sell time and expression.
+**Hard** (gems/thread/glint) ... earned slowly OR bought. Its job is to sell time and expression.
 
 ⚠ **Hard currency buys cosmetics, convenience and content. It never buys power.** In anything with a
-competitive or comparative surface, purchasable power is not a monetisation choice — it ends the game
+competitive or comparative surface, purchasable power is not a monetisation choice ... it ends the game
 for everyone who did not pay, and they are the people who make it worth playing.
 
 ---
@@ -89,14 +89,14 @@ async function grant(txId: string, sku: string, userId: string) {
 ## Tuning without exploiting
 
 **Measure:** day-1/7/30 retention, session length, conversion rate, ARPDAU, and ⚠ **refund rate and
-review sentiment** — the two everyone omits and the two that catch a predatory economy early.
+review sentiment** ... the two everyone omits and the two that catch a predatory economy early.
 
 **The test to apply to any change:** *would I be comfortable if a player could see exactly why this
 offer appeared right now?*
 
 ⚠ If the honest explanation is "because you just lost three times and we think you are frustrated",
 the mechanic is the problem. If it is "because you just cleared a hard level and you are enjoying
-yourself", it is fine — and it converts better anyway.
+yourself", it is fine ... and it converts better anyway.
 
 ---
 
