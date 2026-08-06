@@ -31,6 +31,10 @@ retroactive. Every entry below is a real trap that a reasonable person would wal
 Unlicensed means **all rights reserved by default.** These cannot be safely shipped from without
 resolving provenance with the author:
 
+- 🚨 **`PathFinding.js`** (qiao) ... **8,705 stars and no licence file.** Popularity is not permission,
+  and this is the clearest example of why you check rather than assume. **Use `rot.js` (BSD-3)**,
+  which has A\*, FOV and dungeon generation.
+
 - `NinjaAdventure` sprite pack
 - `kenney-starter-kit-match-3` (its five siblings all carry MIT files; this copy carries no proof)
 - `skills-main` (CrewAI docs skills)
@@ -46,7 +50,14 @@ react-three-fiber · drei · seedrandom · free-tex-packer.
 
 **BSD-2:** excalibur. **BSD-3:** rot.js. **ISC:** canvas-confetti.
 
-**Apache-2.0:** transformers.js · dexie · paper-design/shaders.
+**Apache-2.0:** transformers.js · dexie · paper-design/shaders · Babylon.js · Rapier · Tauri.
+
+**zlib:** postprocessing (pmndrs) ... permissive, commercial use stated explicitly, attribution
+appreciated but not required.
+
+**Also verified MIT by reading the file:** three.js · three-mesh-bvh · glTF-Transform · webgl-noise ·
+Colyseus · msgpackr · steamworks.js · miniplex · simplex-noise · poisson-disk-sampling · Zod ·
+i18next. **ISC:** koota · delaunator. **BSD-3:** geckos.io.
 
 **CC0:** Kenney asset packs (the ones carrying licence files) · grafxkid-rpg-sprites.
 

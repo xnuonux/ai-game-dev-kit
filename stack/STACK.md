@@ -87,7 +87,9 @@ npm i -D vite @capacitor/core @capacitor/cli
 |---|---|---|---|
 | 2D physics | **matter-js** | MIT | the default |
 | 2D physics, serious | **planck.js** | MIT | Box2D port |
-| ECS | **bitECS** | 🚨 **MPL-2.0** | ⚠ **not MIT.** file-level copyleft; safe unless you fork it. And only when entity counts actually hurt |
+| ECS | **miniplex** | MIT | ⭐ the clean default. And only when entity counts actually hurt |
+| ECS, alternative | **koota** (pmndrs) | ISC | archetype-based, r3f-friendly |
+| ~~ECS~~ | ~~bitECS~~ | 🚨 **MPL-2.0** | ⚠ **not MIT**, and widely mislabelled as such. file-level copyleft. **prefer miniplex or koota** |
 | Roguelike toolkit | **rot.js** | BSD-3 | FOV, pathfinding, dungeon gen |
 | Particles (Pixi) | **@pixi/particle-emitter** | MIT | |
 | Particles (Phaser/Excalibur/Godot) | **built-in** | ... | ⚠ do not add a second one |
@@ -100,7 +102,14 @@ npm i -D vite @capacitor/core @capacitor/cli
 | Atlases | **free-tex-packer** | MIT | |
 
 🚨 **`lygia` (shaders) is Prosperity 3.0.0 and CANNOT be used in a commercial game.** 30-day trial
-only. Write the shader by hand, or use `paper-design/shaders` (Apache-2.0).
+only, and it appears on every shader shortlist as though it were permissive.
+
+⭐ **Use `webgl-noise` (MIT, Stefan Gustavson) instead.** It is the canonical GLSL simplex/classic
+noise implementation and it is what anyone actually wanted from lygia. For larger effect libraries,
+`paper-design/shaders` (Apache-2.0).
+
+⚠ **`PathFinding.js` is rejected despite 8.7k stars: it has no licence file, which means all rights
+reserved by default.** Use `rot.js` (BSD-3), which includes A\*, FOV and dungeon generation.
 
 ---
 
