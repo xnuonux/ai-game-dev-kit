@@ -8,7 +8,7 @@ already in this file.
 
 ---
 
-## Universal — every track, every genre
+## Universal ... every track, every genre
 
 | role | pick | licence | note |
 |---|---|---|---|
