@@ -50,7 +50,9 @@ stack/      dependency maps, every licence verified
 | `game-loop` | fixed timestep, interpolation, the platform truths |
 | `game-feel` | the 200 lines, in priority order |
 | **`game-audio`** | **procedural SFX ... a whole game's audio, zero files, zero licences** |
+| **`game-localvoice`** | **a model inside the binary. three licences, the ratings risk, and the grounding rule** |
 | `game-vfx` | particles, hitstop, shake, persistent decals |
+| **`game-anim`** | **character motion. hand-authored vs procedural, and the cancel window that decides whether a game feels bad** |
 | `game-input` | touch, gamepad, keyboard+mouse ... one intent layer |
 | `game-ai` | pathfinding, state machines, utility AI, and enemies that feel fair |
 | **`game-net`** | **multiplayer. the hardest thing here, and the one that cannot be deferred** |
