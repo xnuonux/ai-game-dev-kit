@@ -57,7 +57,9 @@ stack/      dependency maps, every licence verified
 | `game-economy` | currency and stores, without dark patterns |
 | `game-perf` | frame budget on the hardware you actually target |
 | `game-art` | CC0 sources, palettes, the silhouette test |
+| **`game-artgen`** | **generated art as a pipeline. what models cannot do, and the licence that restricts your OUTPUT** |
 | `game-a11y` | accessibility ... a store and legal requirement now |
+| **`game-measure`** | **headless probes as instruments. a typechecker proves the pieces FIT, not that any of them MOVE** |
 | `game-ship` | signing, ratings, store, per platform |
 | `game-verdict` | the gate ... the agent brings receipts, the human judges |
 
