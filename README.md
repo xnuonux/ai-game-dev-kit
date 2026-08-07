@@ -45,6 +45,7 @@ stack/      dependency maps, every licence verified
 | `00-start-here` | routing, and the build order that prevents the unplayable demo |
 | `game-brief` | the one page written before any code |
 | `game-design` | difficulty curves, progression maths, pacing |
+| **`game-narrative`** | **the two ledgers ... what is true, and what the player has been told. plus every surface a story leaks through** |
 | `engine-skills` | **Phaser and PixiJS ship 54 first-party agent skills. Install them.** |
 | `game-loop` | fixed timestep, interpolation, the platform truths |
 | `game-feel` | the 200 lines, in priority order |
